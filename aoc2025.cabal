@@ -35,7 +35,7 @@ maintainer: dasskrit@gmail.com
 -- copyright:
 build-type: Simple
 -- Extra doc files to be distributed with the package, such as a CHANGELOG or a README.
-extra-doc-files: CHANGELOG.md
+extra-doc-files: README.md
 
 -- Extra source files to be distributed with the package, such as examples, or a tutorial module.
 -- extra-source-files:
@@ -48,11 +48,17 @@ executable aoc2025
   -- .hs or .lhs file containing the Main module.
   main-is: Main.hs
   -- Modules included in this executable, other than Main.
-  other-modules: DayOne
+  other-modules:
+    DayOne
+    DayTwo
+
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:
   -- Other library packages from which modules are imported.
-  build-depends: base ^>=4.18.3.0
+  build-depends:
+    base ^>=4.18.3.0,
+    split ^>=0.2.5,
+
   -- Directories containing source files.
   hs-source-dirs: app
   -- Base language which the package is written in.
