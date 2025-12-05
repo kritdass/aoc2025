@@ -2,6 +2,7 @@ module Main where
 
 import Data.IntMap.Lazy (IntMap)
 import qualified Data.IntMap.Lazy as M
+import DayFive (dayFive)
 import DayFour (dayFour)
 import DayOne (dayOne)
 import DayThree (dayThree)
@@ -16,7 +17,7 @@ printDay day f = do
     putStrLn ""
 
 days :: IntMap (IO ())
-days = M.fromList . zip [1 ..] $ [dayOne, dayTwo, dayThree, dayFour]
+days = M.fromList . zip [1 ..] $ [dayOne, dayTwo, dayThree, dayFour, dayFive]
 
 main :: IO ()
 main = do
