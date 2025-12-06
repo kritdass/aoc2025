@@ -5,6 +5,7 @@ import qualified Data.IntMap.Lazy as M
 import DayFive (dayFive)
 import DayFour (dayFour)
 import DayOne (dayOne)
+import DaySix (daySix)
 import DayThree (dayThree)
 import DayTwo (dayTwo)
 import System.Environment (getArgs)
@@ -17,7 +18,9 @@ printDay day f = do
     putStrLn ""
 
 days :: IntMap (IO ())
-days = M.fromList . zip [1 ..] $ [dayOne, dayTwo, dayThree, dayFour, dayFive]
+days =
+    M.fromList . zip [1 ..] $
+        [dayOne, dayTwo, dayThree, dayFour, dayFive, daySix]
 
 main :: IO ()
 main = do
