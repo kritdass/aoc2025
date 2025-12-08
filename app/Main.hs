@@ -2,6 +2,7 @@ module Main where
 
 import Data.IntMap.Lazy (IntMap)
 import qualified Data.IntMap.Lazy as M
+import DayEight (dayEight)
 import DayFive (dayFive)
 import DayFour (dayFour)
 import DayOne (dayOne)
@@ -28,6 +29,7 @@ days =
         , dayFive
         , daySix
         , daySeven
+        , dayEight
         ]
 
 main :: IO ()
