@@ -5,6 +5,7 @@ import qualified Data.IntMap.Lazy as M
 import DayEight (dayEight)
 import DayFive (dayFive)
 import DayFour (dayFour)
+import DayNine (dayNine)
 import DayOne (dayOne)
 import DaySeven (daySeven)
 import DaySix (daySix)
@@ -14,8 +15,9 @@ import System.Environment (getArgs)
 
 printDay :: Int -> IO () -> IO ()
 printDay day f = do
-    putStrLn $ "Day " ++ show day
-    putStrLn "-----"
+    let header = "Day " ++ show day
+    putStrLn header
+    putStrLn $ replicate (length header) '-'
     f
     putStrLn ""
 
@@ -30,6 +32,7 @@ days =
         , daySix
         , daySeven
         , dayEight
+        , dayNine
         ]
 
 main :: IO ()
