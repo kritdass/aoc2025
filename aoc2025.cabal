@@ -56,6 +56,7 @@ executable aoc2025
     DayOne
     DaySeven
     DaySix
+    DayTen
     DayThree
     DayTwo
 
@@ -63,10 +64,11 @@ executable aoc2025
   -- other-extensions:
   -- Other library packages from which modules are imported.
   build-depends:
-    base ^>=4.18.3.0,
-    containers ^>=0.8,
-    split ^>=0.2.5,
-    vector ^>=0.13.2.0,
+    base >=4.19.2 && <4.20,
+    containers >=0.6.8 && <0.7,
+    sbv >=13.1 && <13.2,
+    split >=0.2.5 && <0.3,
+    vector >=0.13.2 && <0.14,
 
   -- Directories containing source files.
   hs-source-dirs: app
