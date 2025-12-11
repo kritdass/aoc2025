@@ -50,6 +50,7 @@ executable aoc2025
   -- Modules included in this executable, other than Main.
   other-modules:
     DayEight
+    DayEleven
     DayFive
     DayFour
     DayNine
