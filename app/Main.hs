@@ -12,6 +12,7 @@ import DaySeven (daySeven)
 import DaySix (daySix)
 import DayTen (dayTen)
 import DayThree (dayThree)
+import DayTwelve (dayTwelve)
 import DayTwo (dayTwo)
 import System.Environment (getArgs)
 
@@ -37,6 +38,7 @@ days =
         , dayNine
         , dayTen
         , dayEleven
+        , dayTwelve
         ]
 
 main :: IO ()

@@ -59,6 +59,7 @@ executable aoc2025
     DaySix
     DayTen
     DayThree
+    DayTwelve
     DayTwo
 
   -- LANGUAGE extensions used by modules in this package.
